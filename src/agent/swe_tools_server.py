@@ -50,9 +50,9 @@ async def execute_command(command_string: str) -> str:
     return "".join(output)
 
 @mcp.tool()
-async def open_url_get_html_content(url: str) -> str:
+async def browser_open(url: str) -> str:
     """
-    打开一个url，并返回url的html内容。
+    浏览器打开一个url，并返回html内容。
     """
     return requests.get(url).text
 
