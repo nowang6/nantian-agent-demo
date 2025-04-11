@@ -12,8 +12,6 @@ mcp = FastMCP("SWE Tools")
 async def execute_command(command_string: str) -> str:
     """
     执行一个命令，并返回命令的输出。
-    :param command_string: 要执行的命令字符串
-    :return: 命令的输出
     """
     # 启动进程
     process = subprocess.Popen(
@@ -55,8 +53,6 @@ async def execute_command(command_string: str) -> str:
 async def open_url_get_html_content(url: str) -> str:
     """
     打开一个url，并返回url的html内容。
-    :param url: 要打开的url
-    :return: url的html内容
     """
     return requests.get(url).text
 

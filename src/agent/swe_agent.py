@@ -15,7 +15,7 @@ logfire.instrument_pydantic_ai()
 
 server = MCPServerHTTP(url='http://localhost:8000/sse')  
 
-model = OpenAIModel('deepseek-chat', provider=OpenAIProvider(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url='http://api.deepseek.com/v1'))
+# model = OpenAIModel('deepseek-chat', provider=OpenAIProvider(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url='http://api.deepseek.com/v1'))
 
 # 初始化 deepseek chat 模型的 agent
 deepseek_agent = Agent(
