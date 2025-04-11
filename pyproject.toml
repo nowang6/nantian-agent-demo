@@ -1,0 +1,24 @@
+[project]
+name = "nantian-agent-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "helium>=5.1.1",
+    "pillow>=11.1.0",
+    "pydantic-ai[examples,logfire]>=0.0.53",
+    "pydantic-graph>=0.0.53",
+    "python-dotenv>=1.0.0",
+    "selenium>=4.31.0",
+    "smolagents>=1.13.0",
+    "torch>=2.6.0",
+    "transformers>=4.51.1",
+]
+
+
+
+[[tool.uv.index]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
